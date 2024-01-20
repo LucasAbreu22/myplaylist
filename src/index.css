@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Oxanium:wght@200..800&display=swap');
+
+:root{
+    --clr-bkg: #0D0D0D;
+    --clr-bkg-content: #191A1A;
+    --clr-bkg-button: #FCA729;
+    --clr-bkg-butto-hover: #FFB74B;
+    --clr-bkg-butto-click: #D48A1B;
+
+    --clr-text-input: #B7B7B7;
+    --clr-text-card: #FFFFFF;
+    --clr-text-button: #000000;
+
+    --font-text-1: "League Spartan", sans-serif;
+    --font-text-2: "Oxanium", sans-serif;
+}
+
+body
+{
+    padding: 0;
+    background-color: var(--clr-bkg);
+}
+
+.App
+{
+    background-color: var(--clr-bkg);
+    padding: 15px 76px 0 76px;
+    color: var(--clr-text-card);
+
+}
+
+.input-text
+{
+    width: 550px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: var(--font-text-1);
+    color: var(--clr-text-input);
+    font-size: 18px;
+    background-color: var(--clr-bkg-content);
+    border: none;
+    padding-left: 20px;
+}
+
+.card
+{
+    display: flex;
+    padding: 20px;
+    width: 367px;
+    background-color: var(--clr-bkg-content);
+    border-radius: 7px;
+    font-size: 18px;
+    font-family: var(--font-text-2);
+}
+
+.card button
+{
+    height: 36px;
+    width: 100%;
+    background-color: var(--clr-bkg-button);
+    font-size: 18px;
+    font-family: var(--font-text-1);
+    border-radius: 7px;
+    border: none;
+}
+
+.card button:hover
+{
+    cursor: pointer;
+    background-color: var(--clr-bkg-butto-hover);
+}
+
+.card button:active
+{
+    background-color: var(--clr-bkg-butto-click);
+}
+
+#sct-big-card
+{
+    text-align: -webkit-center;
+}
+
+#big-card
+{
+    margin-top: 15px;
+}
+
+#big-card img
+{
+    width: 130px;
+    height: 130px;
+    background-color: #4b4b4b;
+}
+
+.info-card
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+    text-align: left;
+    line-height: 35px;
+    margin-top: -9px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#title{
+    font-family: var(--font-text-1);
+    font-size: 32px;
+    text-align: left;
+}
+
+#navigation
+{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#navigation button
+{
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--clr-bkg-content);
+    color: var(--clr-text-card);
+}
+
+#navigation button:hover
+{
+    cursor: pointer;
+}
+
+#navigation span
+{
+    font-family: var(--font-text-2);
+    font-size: 24px;
+}
+
+#songs
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.simple-card
+{
+    width: 285px;
+}
+
+.simple-card img
+{
+    width: 100px;
+    height: 100px;
+}
+
+@media(max-width: 768px)
+{
+    #root
+    {
+        padding: 15px;
+    }
+
+    .App
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    #sct-search
+    {
+        width: 100%;
+    }
+    .input-text
+    {
+        width: 95%;
+    }
+
+    #big-card
+    {
+        width: auto;
+    }
+
+    #navigation
+    {
+        width: 100%;
+        gap: unset;
+        justify-content: space-between;
+    }
+
+    #navigation button
+    {
+        width: 130px;
+        height: 60px;
+    }
+    
+    #navigation span {
+        font-size: 22px;
+    }
+
+    #navigation i
+    {
+        font-size: 20px;
+    }
+
+    #spn-back
+    {
+        margin-left: 15px;
+    }
+
+    #spn-next
+    {
+        margin-right: 15px;
+    }
+
+    .simple-card {
+        width: 95%;
+    }
+}
