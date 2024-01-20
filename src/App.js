@@ -6,7 +6,7 @@ import unknow from "./img/interrogacao.jpg";
 function App() {
   const [search, setSearch] = useState("");
   const [clientID, setClientID] = useState("51e617ad49bf4d608eb77c2f3518dad0");
-  const [idPlaylist, setIdPlaylist] = useState("5tXoh1D5GMB2VriY5Thd63");
+  const [idPlaylist, setIdPlaylist] = useState("43oaKmmproT0V2qbpn1vBB");
   const [token, setToken] = useState(null);
   const [configReq, setConfigReq] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
