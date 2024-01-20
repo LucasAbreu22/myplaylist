@@ -21,7 +21,7 @@ function App() {
 
     const endpoint = "https://accounts.spotify.com/authorize";
     const redirect_uri = "http://192.168.100.104:3000/";
-
+    return false;
     const queryParams = new URLSearchParams({
       response_type: 'token',
       client_id: clientID,
