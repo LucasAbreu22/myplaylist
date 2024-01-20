@@ -20,8 +20,8 @@ function App() {
   {
 
     const endpoint = "https://accounts.spotify.com/authorize";
-    const redirect_uri = "http://192.168.100.104:3000/";
-    return false;
+    const redirect_uri = "https://myplaylist-azure.vercel.app/";
+    
     const queryParams = new URLSearchParams({
       response_type: 'token',
       client_id: clientID,
